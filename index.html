@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <title>Document</title>
+    <style>
+        .dropbtn,
+        .lawbtn,
+        .strainbtn,
+        .disbtn {
+            background-color: #808080;
+            /* opacity: 0.5; */
+            width: 100%;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropbtn:hover,
+        .dropbtn:focus,
+        .lawbtn:hover,
+        .lawbtn:focus,
+        .strainbtn:hover,
+        .strainbtn:focus,
+        .disbtn:hover,
+        .disbtn:focus {
+            background-color: #505050;
+        }
+
+
+        .dropdown,
+        .lawbtn,
+        .strainbtn,
+        .disbtn {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content-job,
+        .dropdown-content-law,
+        .dropdown-content-strain,
+        .dropdown-content-dispensaries {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            max-height: 460px;
+            overflow: auto;
+        }
+
+        .dropdown-content-job a,
+        .dropdown-content-law a,
+        .dropdown-content-strain a,
+        .dropdown-content-dispensaries a {
+            color: black;
+            padding: 12px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Jobs by State</h2>
+    <p style="margin-top: -25px;"><i>(Click the button to see!)</i></p>
+
+    <div class="dropdown">
+        <button onClick="myFunction()" class="dropbtn">View Cannabis Jobs by State! <i class="fas fa-arrow-down"
+                style="float:right; margin-left: 5px"></i></button>
+        <div id="myDropdown" class="dropdown-content-job">
+            <ul style="list-style-type:none;">
+                <a href="/category/marijuana-jobs/cannabis-jobs-in-arizona/">Arizona</a>
+                <a href="/category/marijuana-jobs/california/">California</a>
+                <a href="/category/marijuana-jobs/canada/">Canada</a>
+                <a href="/category/marijuana-jobs/colorado/">Colorado</a>
+                <a href="/category/marijuana-jobs/cannabis-jobs-in-connecticut/">Connecticut</a>
+                <a href="/category/marijuana-jobs/florida/">Florida</a>
+                <a href="/category/marijuana-jobs/cannabis-jobs-in-georgia/">Georgia</a>
+                <a href="/category/marijuana-jobs/cannabis-jobs-in-kentucky/">Kentucky</a>
+                <a href="/category/marijuana-jobs/maryland/">Maryland</a>
+                <a href="/category/marijuana-jobs/massachusetts/">Massachusetts</a>
+                <a href="/category/marijuana-jobs/michigan/">Michigan</a>
+                <a href="/category/marijuana-jobs/minnesota/">Minnesota</a>
+                <a href="/category/marijuana-jobs/nevada/">Nevada</a>
+                <a href="/category/marijuana-jobs/cannabis-jobs-in-new-york/">New York</a>
+                <a href="/category/marijuana-jobs/oregon/">Oregon</a>
+                <a href="/category/marijuana-jobs/cannabis-jobs-in-texas/">Texas</a>
+                <a href="/category/marijuana-jobs/washington/">Washington</a>
+            </ul>
+        </div>
+    </div>
+    <br>
+
+    <h2>Laws by State</h2>
+    <p style="margin-top: -25px;"><i>(Click the button to see!)</i></p>
+
+    <div class="dropdown">
+        <button onClick="lawFunction()" class="lawbtn">View Cannabis Laws by State! <i class="fas fa-arrow-down"
+                style="float:right; margin-left: 5px"></i></button>
+        <div id="lawDropdown" class="dropdown-content-law">
+            <ul style="list-style-type:none;">
+                <a href="/oregon-marijuana-laws-2019/">Oregon</a>
+                <a href="/texas-marijuana-laws-2019/">Texas</a>
+                <a href="/nevada-marijuana-laws-2019/">Nevada</a>
+                <a href="/colorado-marijuana-laws-2019/">Colorado</a>
+                <a href="/massachusetts-marijuana-laws-2019/">Massachusetts</a>
+                <a href="/california-marijuana-laws-2019/">California</a>
+                <a href="/florida-marijuana-laws-2019/">Florida</a>
+            </ul>
+        </div>
+    </div>
+    <br>
+
+    <h2>Cannabis Strains</h2>
+    <p style="margin-top: -25px;"><i>(Click the button to see!)</i></p>
+
+    <div class="dropdown">
+        <button onClick="strainFunction()" class="strainbtn">View Cannabis Strains! <i class="fas fa-arrow-down"
+                style="float:right; margin-left: 5px"></i></button>
+        <div id="strainDropdown" class="dropdown-content-strain">
+            <ul style="list-style-type:none;">
+                <a href="/9-pound-hammer/">9 Pound Hammer (Indica)</a>
+                <a href="/super-silver-haze/">Super Silver Haze (Sativa)</a>
+                <a href="/blue-cheese/">Blue Cheese (Indica)</a>
+                <a href="/harlequin/">Harlequin (CBD)</a>
+                <a href="/headband/">Headband (Hybrid)</a>
+                <a href="/pineapple-express/">Pineapple Express (Hybrid)</a>
+                <a href="/jack-herer/">Jack Herer (Sativa)</a>
+                <a href="/trainwreck/">Trainwreck (Hybrid)</a>
+                <a href="/bubba-kush/">Bubba Kush (Indica)</a>
+            </ul>
+        </div>
+    </div>
+    <br>
+
+    <h2>Florida Dispensaries</h2>
+    <p style="margin-top: -25px;"><i>(Click the button to see!)</i></p>
+
+    <div class="dropdown">
+        <button onClick="disFunction()" class="disbtn">View Florida Dispensaries! <i class="fas fa-arrow-down"
+                style="float:right; margin-left: 5px"></i></button>
+        <div id="disDropdown" class="dropdown-content-dispensaries">
+            <ul style="list-style-type:none;">
+                <a href="florida-dispensaries/">Apollo Beach</a>
+                <a href="/curaleaf/">Bonita Springs</a>
+                <a href="/trulieve/">Boynton Beach</a>
+                <a href="/trulieve/">Bradenton</a>
+                <a href="/surterra/">Brandon</a>
+                <a href="/trulieve/">Clearwater</a>
+                <a href="/trulieve/">Dania Beach</a>
+                <a href="/curaleaf/">Daytona Beach</a>
+                <a href="/curaleaf/">Deerfield Beach</a>
+                <a href="/surterra/">Deltona</a>
+                <a href="/trulieve/">Edgewater</a>
+                <a href="/curaleaf/">Fort Myers</a>
+                <a href="/curaleaf/">Fort Pierce</a>
+                <a href="/knox-medical/">Fort Walton Beach</a>
+                <a href="/trulieve/">Gainesville</a>
+                <a href="/florida-dispensaries/">Holly Hill</a>
+                <a href="/curaleaf/">Jacksonville</a>
+                <a href="/curaleaf/">Kendall</a>
+                <a href="/surterra/">Key West</a>
+                <a href="/florida-dispensaries/">Kissimmee</a>
+                <a href="/curaleaf/">Lakeland</a>
+                <a href="/curaleaf/">Lake Worth</a>
+                <a href="/surterra/">Largo</a>
+                <a href="/curaleaf/">Lutz</a>
+                <a href="/florida-dispensaries/">Merritt Island</a>
+                <a href="/curaleaf/">Miami</a>
+                <a href="/curaleaf/">Miami Beach</a>
+                <a href="/surterra">New Port Richey</a>
+                <a href="/surterra/">North Palm Beach</a>
+                <a href="/surterra/">North Port</a>
+                <a href="/curaleaf/">Ocala</a>
+                <a href="/surterra/">Orange Park</a>
+                <a href="/curaleaf/">Orlando</a>
+                <a href="/curaleaf/">Palm Bay</a>
+                <a href="/trulieve/">Palm Coast</a>
+                <a href="/curaleaf/">Palm Harbor</a>
+                <a href="/surterra/">Pensacola</a>
+                <a href="/surterra/">Port Orange</a>
+                <a href="/surterra/">Port St Lucie</a>
+                <a href="/trulieve/">Sarasota</a>
+                <a href="/trulieve/">St. Augustine</a>
+                <a href="/curaleaf/">St. Petersburg</a>
+                <a href="/surterra/">Tallahassee</a>
+                <a href="/curaleaf/">Tampa</a>
+                <a href="/curaleaf/">Titusville</a>
+                <a href="/trulieve/">The Villages</a>
+                <a href="/trulieve/">Venice</a>
+                <a href="/trulieve/">Vero Beach</a>
+                <a href="/florida-dispensaries/">Wellington</a>
+                <a href="/trulieve/">West Palm Beach</a>
+                <a href="/florida-dispensaries/">Winter Haven</a>
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            console.log("jobs btn was clicked");
+        }
+        //closes dropdown menu if clicked outside of dropdown
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content-job");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+
+        function lawFunction() {
+            document.getElementById("lawDropdown").classList.toggle("show");
+            console.log("laws btn was clicked");
+        }
+        //closes dropdown menu if clicked outside of dropdown
+        window.onclick = function (event) {
+            if (!event.target.matches('.lawbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content-law");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        function strainFunction() {
+            document.getElementById("strainDropdown").classList.toggle("show");
+            console.log("strains btn was clicked");
+        }
+        //closes dropdown menu if clicked outside of dropdown
+        window.onclick = function (event) {
+            if (!event.target.matches('.strainbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content-strain");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+
+        function disFunction() {
+            document.getElementById("disDropdown").classList.toggle("show");
+            console.log("dispensaries btn was clicked");
+        }
+        //closes dropdown menu if clicked outside of dropdown
+        window.onclick = function (event) {
+            if (!event.target.matches('.disbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content-dispensaries");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
