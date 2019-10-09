@@ -83,8 +83,8 @@
     <p style="margin-top: -25px;"><i>(Click the button to see!)</i></p>
 
     <div class="dropdown">
-        <button onClick="myFunction()" class="dropbtn" style="text-align: left">View Cannabis Jobs by State! <i class="fas fa-arrow-down"
-                style="float:right; margin-left: 5px"></i></button>
+        <button onClick="myFunction()" class="dropbtn" style="text-align: left">View Cannabis Jobs by State! <i
+                class="fas fa-arrow-down" style="float:right; margin-left: 5px"></i></button>
         <div id="myDropdown" class="dropdown-content-job">
             <ul style="list-style-type:none;">
                 <a href="/category/marijuana-jobs/cannabis-jobs-in-arizona/">Arizona</a>
@@ -113,8 +113,8 @@
     <p style="margin-top: -25px;"><i>(Click the button to see!)</i></p>
 
     <div class="dropdown">
-        <button onClick="lawFunction()" class="lawbtn" style="text-align: left">View Cannabis Laws by State! <i class="fas fa-arrow-down"
-                style="float:right; margin-left: 5px"></i></button>
+        <button onClick="lawFunction()" class="lawbtn" style="text-align: left">View Cannabis Laws by State! <i
+                class="fas fa-arrow-down" style="float:right; margin-left: 5px"></i></button>
         <div id="lawDropdown" class="dropdown-content-law">
             <ul style="list-style-type:none;">
                 <a href="/oregon-marijuana-laws-2019/">Oregon</a>
@@ -133,8 +133,8 @@
     <p style="margin-top: -25px;"><i>(Click the button to see!)</i></p>
 
     <div class="dropdown">
-        <button onClick="strainFunction()" class="strainbtn" style="text-align: left">View Cannabis Strains! <i class="fas fa-arrow-down"
-                style="float:right; margin-left: 5px"></i></button>
+        <button onClick="strainFunction()" class="strainbtn" style="text-align: left">View Cannabis Strains! <i
+                class="fas fa-arrow-down" style="float:right; margin-left: 5px"></i></button>
         <div id="strainDropdown" class="dropdown-content-strain">
             <ul style="list-style-type:none;">
                 <a href="/9-pound-hammer/">9 Pound Hammer (Indica)</a>
@@ -155,8 +155,8 @@
     <p style="margin-top: -25px;"><i>(Click the button to see!)</i></p>
 
     <div class="dropdown">
-        <button onClick="disFunction()" class="disbtn" style="text-align: left">View Florida Dispensaries! <i class="fas fa-arrow-down"
-                style="float:right; margin-left: 5px"></i></button>
+        <button onClick="disFunction()" class="disbtn" style="text-align: left">View Florida Dispensaries! <i
+                class="fas fa-arrow-down" style="float:right; margin-left: 5px"></i></button>
         <div id="disDropdown" class="dropdown-content-dispensaries">
             <ul style="list-style-type:none;">
                 <a href="florida-dispensaries/">Apollo Beach</a>
@@ -312,6 +312,77 @@
             }
         }
     </script>
+    <br><br>
+    <div class='footer'>
+        <label for="toggle">FREE CANNABIS ADVICE</label>
+        <input type="checkbox" id="toggle" />
+        <div class="content">
+            <a href="#">How to open a dispensary in florida</a>
+            <a href="#">How to open a dispensar in california</a>
+            <a href="#">How to get a job in the cannabis industry</a>
+            <a href="#">CBD oil benefits & side effects</a>
+            <a href="#">how to market your cannabis business</a>
+            <a href="#">How to grow marijuana (step by step)</a>
+        </div>
+    </div>
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: aquamarine;
+            height: 250px;
+        }
+
+        .label {
+            border: 1px solid white;
+            background-color: aquamarine;
+            width: 270px;
+            text-align: left;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        #toggle {
+            display: none;
+        }
+
+        .content a {
+            text-decoration: none;
+            color: black;
+        }
+
+        @media (max-width: 500px) {
+            .label {
+                display: block;
+                cursor: pointer;
+            }
+
+            .content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                padding: 12px 16px;
+                z-index: 1;
+            }
+
+            .content a {
+                display: block;
+                border-bottom: 1px solid lightgray;
+                margin: 0;
+                cursor: pointer;
+            }
+
+            #toggle:checked+.content {
+                display: block;
+            }
+        }
+    </style>
+
 </body>
 
 </html>
